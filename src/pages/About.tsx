@@ -8,7 +8,7 @@ const About = () => {
     <div className="d-flex row">
       <div className="col-lg-6">
         <h1 className="fw-medium">Hi!</h1>
-        <p>
+        <p className="mt-3">
           I'm Talia Frendl, a junior fullstack developer with a passion for
           building applications that help{" "}
           <span className="fw-bold">
@@ -107,7 +107,151 @@ const About = () => {
         </p>
       </div>
       <div className="col-lg-6 overflow-hidden" style={{ height: "100%" }}>
-        Photos go here
+        <h4 className="d-flex justify-content-center mt-5">
+          Snapshots of My International Adventures
+        </h4>
+        <div id="carouselExampleIndicators" className="carousel slide mt-3">
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src="/images/amalfi.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/austria1.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/austria3.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/austriaflower.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/chicken.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/japan.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/pigeon.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/rome.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
   );

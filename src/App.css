@@ -1,3 +1,9 @@
+.carousel-inner img {
+  max-height: 500px; /* Limit max height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image fits within its bounds */
+}
+
 body {
   margin: 0;
   padding: 0;
