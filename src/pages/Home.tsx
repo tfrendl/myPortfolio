@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import "../App.css";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | Talia Joy Frendl";
+  }, []);
   return (
     <div className="row d-flex justify-content-center align-items-center">
       <div className="col-lg-8">

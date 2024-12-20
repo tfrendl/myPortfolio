@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About | Talia Joy Frendl";
+  }, []);
   return (
     <div className="d-flex row">
       <div className="col-lg-6">

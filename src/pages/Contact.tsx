@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
-  return <div></div>;
+  useEffect(() => {
+    document.title = "Contact | Talia Joy Frendl";
+  }, []);
 };
 
 export default Contact;
