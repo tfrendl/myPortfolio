@@ -168,6 +168,12 @@ const About = () => {
               data-bs-slide-to="8"
               aria-label="Slide 9"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="9"
+              aria-label="Slide 10"
+            ></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -180,6 +186,13 @@ const About = () => {
             <div className="carousel-item">
               <img
                 src="/images/austria1.jpeg"
+                className="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/images/austria4.jpeg"
                 className="d-block w-100 img-fluid"
                 alt="..."
               />
