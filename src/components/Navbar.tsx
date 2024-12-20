@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <nav className="navbar nabvar-expand-lg navbar-light">
       <div className="container-fluid">
@@ -8,19 +10,39 @@ const Navbar = () => {
         </a>
 
         {/* Navigation Links */}
-        <div className="d-flex">
-          <Link to="/" className="nav-link mx-3">
+        <div className="d-flex align-items-center">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
+            }
+          >
             Home
-          </Link>
-          <Link to="/projects" className="nav-link mx-3">
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
+            }
+          >
             Projects
-          </Link>
-          <Link to="/about" className="nav-link mx-3">
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
+            }
+          >
             About
-          </Link>
-          <Link to="/contact" className="nav-link mx-3">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>

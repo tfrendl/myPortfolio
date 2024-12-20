@@ -13,18 +13,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div>
-        <Router>
-          <Navbar />
+      <Router>
+        <Navbar />
+        <div className="content transparent-overlay">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </Router>
-      </div>
-      <div className="content transparent-overlay"></div>
+        </div>
+      </Router>
     </>
   );
 }

@@ -1,17 +1,24 @@
-import React from "react";
+import "../App.css";
 
 const Home = () => {
   return (
-    <div className="container vh-100 d-flex flex-column justify-content-center">
-      <div className="row">
-        <div className="col-md-6 text-content">
-          <h1>Hi there!</h1>
-          <h2>I'm Talia Frendl,</h2>
-          <p>a full-stack developer.</p>
-        </div>
-        <div className="col-md-6 text-center">
-          <img src="/images/homePhoto.png" alt="Profile Photo" />
-        </div>
+    <div className="row d-flex justify-content-center align-items-center">
+      <div className="col-lg-8">
+        <h2 className="fw-bold">Hi there!</h2>
+        <p className="display-3">
+          I'm <span className="font-color-blue">Talia Frendl</span>,
+        </p>
+        <h3>a Junior Fullstack Developer</h3>
+        <button type="button" className="resume-button">
+          View Resume
+        </button>
+      </div>
+      <div className="col-lg-3 d-flex justify-content-center align-items-center">
+        <img
+          src="/images/homePhoto.png"
+          alt="Profile Photo"
+          className="img-fluid"
+        />
       </div>
     </div>
   );

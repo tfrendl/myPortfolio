@@ -1,8 +1,6 @@
 body {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  color: #3e4b50;
   background: linear-gradient(
     to right,
     rgba(201, 159, 136, 0.7),
@@ -11,7 +9,16 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: auto;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #3e4b50;
+}
+
+.fw-medium {
+  font-weight: 500;
 }
 
 .transparent-overlay {
@@ -19,13 +26,29 @@ body {
   top: 15%;
   left: 0;
   height: 70%;
+  padding: 60px;
+  box-sizing: border-box;
   width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: -1;
+  background: rgba(255, 255, 255, 0.275);
+  z-index: 1;
+  overflow: auto;
+}
+
+.nav-link.outline-current-page {
+  display: inline-block;
+  border: 2px solid #c99f88;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: none;
+  style: inherit;
 }
 
 container {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .text-content {
@@ -33,4 +56,40 @@ container {
   top: -50px;
   text-align: left;
   margin-left: 50px;
+}
+
+.font-color-green {
+  color: #a8bca8;
+}
+
+.font-color-pink {
+  color: #c99f88;
+}
+
+.font-color-blue {
+  color: #91a3b0;
+}
+
+.font-color-cream {
+  color: #f4f1de;
+}
+
+.font-color-dark-blue {
+  color: #3e4b50;
+}
+
+.resume-button {
+  background-color: #f4f1de;
+  border-color: #c99f88;
+  border-width: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 50px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 240px;
+  height: 65px;
 }
