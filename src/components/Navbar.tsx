@@ -5,7 +5,13 @@ const Navbar = () => {
   return (
     <nav className="navbar nabvar-expand-lg navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand ms-4" href="#">
+          <img
+            src="/images/initialImg.png"
+            alt="Initials"
+            className="navbar-logo"
+            style={{ height: "30px", marginRight: "10px" }}
+          />
           Talia Joy Frendl
         </a>
 
