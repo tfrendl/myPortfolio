@@ -9,21 +9,27 @@ import Projects from "./pages/Projects";
 import { Route } from "react-router-dom";
 import { BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <div className="content transparent-overlay">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
+      <div className="app">
+        <div className="content">
+          <Router>
+            <Navbar />
+            <div className="content transparent-overlay">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/projects" element={<Projects />} />
+              </Routes>
+            </div>
+          </Router>
         </div>
-      </Router>
+        <Footer />
+      </div>
     </>
   );
 }
