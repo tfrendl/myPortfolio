@@ -108,7 +108,7 @@ const About = () => {
       </div>
       <div className="col-lg-4 d-flex justify-content-center align-items-center">
         <div className="content">
-          <h4 className="d-flex justify-content-center">
+          <h4 className="d-flex justify-content-center text-center">
             Snapshots of My International Adventures
           </h4>
           <div id="carouselExampleIndicators" className="carousel slide mt-3">
@@ -183,6 +183,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Amalfi Coast, Italy</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -190,6 +193,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Austria</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -197,6 +203,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Austria</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -204,6 +213,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Austria</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -211,6 +223,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Austria</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -218,6 +233,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Austria</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -225,6 +243,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Natural Hot Springs in Japan</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -232,6 +253,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>London, England</h5>
+                </div>
               </div>
               <div className="carousel-item">
                 <img
@@ -239,6 +263,9 @@ const About = () => {
                   className="d-block w-100 img-fluid"
                   alt="..."
                 />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Rome, Italy</h5>
+                </div>
               </div>
             </div>
             <button

@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [recaptchaToken, setRecaptchaToken] = useState("");
 
   // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -44,6 +45,14 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="contactForm py-5 col-md-4 mx-auto"
       >
+        <div
+          className="g-recaptcha"
+          data-sitekey="6Ldv46cqAAAAAHMQsBEPg1TNwoiZyIpI7t1FR_Eh"
+          data-callback={(token: string) => {
+            setRecaptchaToken(token);
+            console.log("reCAPTCHA solved, token:", token);
+          }}
+        ></div>
         <div className="mb-3">
           <input
             type="text"
