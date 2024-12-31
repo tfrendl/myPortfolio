@@ -1,4 +1,4 @@
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css"; // For icons
 import React from "react";
 
 const Footer = () => {
