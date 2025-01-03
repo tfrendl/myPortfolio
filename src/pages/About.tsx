@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex justify-content-center mx-auto">
         <div className="col-lg-6">
           <h1 className="fw-medium">Hi!</h1>
           <p className="mt-3">
@@ -110,7 +110,7 @@ const About = () => {
             </ul>
           </p>
         </div>
-        <div className="col-lg-4 d-flex justify-content-center align-items-center">
+        <div className="col-lg-4 d-flex justify-content-center align-items-start">
           <div className="content">
             <h4 className="d-flex justify-content-center text-center">
               Snapshots of My International Adventures
