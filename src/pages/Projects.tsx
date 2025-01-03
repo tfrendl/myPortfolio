@@ -25,6 +25,18 @@ const Projects = () => {
                 & Found facilitates the adoption process, helping animals find
                 their forever homes.
               </p>
+              <div className="px-auto">
+                <button type="button" className="btn btn-primary me-3">
+                  View Project
+                </button>
+                <a
+                  className="btn btn-outline-primary px-auto"
+                  href="https://www.pawsandfound.org/"
+                  role="button"
+                >
+                  View Website
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -42,6 +54,11 @@ const Projects = () => {
                 handle inventory, pricing, and users, while customers enjoy easy
                 sign-up, cart checkout, order history, and account updates.
               </p>
+              <div className="px-auto">
+                <button type="button" className="btn btn-primary me-3">
+                  View Project
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -60,6 +77,11 @@ const Projects = () => {
                 itineraries, and get personalized recommendations with an AI
                 assistant.
               </p>
+              <div className="px-auto">
+                <button type="button" className="btn btn-primary me-3">
+                  View Project
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -77,6 +99,11 @@ const Projects = () => {
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
+              <div className="px-auto">
+                <button type="button" className="btn btn-primary me-3">
+                  View Project
+                </button>
+              </div>
             </div>
           </div>
         </div>
