@@ -1,17 +1,26 @@
-import Alert from "./components/Alert";
-import Button from "./components/Button";
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ProjectDetails from "./pages/ProjectDetails";
 import Projects from "./pages/Projects";
 import { Route } from "react-router-dom";
 import { BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://myportfolio-5nnx.onrender.com/")
+      .then((response) => setData(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <>
       <div className="app">
@@ -24,6 +33,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/project/:id" element={<ProjectDetails />} />
               </Routes>
             </div>
           </Router>
