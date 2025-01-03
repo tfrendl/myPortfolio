@@ -10,6 +10,7 @@ const ProjectDetails = () => {
   }
 
   return (
+    // project template
     <div style={{ maxWidth: "800px", margin: "0 auto", padding: "16px " }}>
       <img src={project.image} alt={project.title} style={{ width: "100%" }} />
       <h1>{project.title}</h1>
