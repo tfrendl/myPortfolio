@@ -21,7 +21,7 @@ const Projects = () => {
                 <div className="px-auto">
                   <a
                     className="btn btn-primary m-3"
-                    href={`/project/${project.id}`}
+                    href={`/myPortfolio/project/${project.id}`}
                     role="button"
                   >
                     View Project

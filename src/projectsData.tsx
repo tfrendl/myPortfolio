@@ -33,7 +33,7 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: "triplify - Website",
-    summary: "A travel website for booking flights, hotels, and car rentals.",
+    summary: "A travel website for planning your trip itinerary.",
     description:
       "A travel website that allows users to book flights, hotels, and car rentals. Users can also explore popular destinations and read travel guides.",
     image: "/myPortfolio/images/travelWebsite.png",
