@@ -21,7 +21,7 @@ const Home = () => {
           </div>
           <div className="col-lg-6 d-flex justify-content-center align-items-center position-relative">
             <img
-              src="/images/homePhoto.png"
+              src="https://tfrendl.github.io/myPortfolio/images/homePhoto.png"
               alt="Profile Photo"
               className="img-fluid"
             />

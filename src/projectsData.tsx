@@ -17,7 +17,7 @@ const projectsData: Project[] = [
       "Designed to help connect pets at animal shelters to loving homes.",
     description:
       "A user-friendly platform dedicated to connecting individuals with adoptable cats and dogs from animal shelters. The website offers comprehensive listings of various cat and dog breeds, allowing users to explore and find their ideal companion. By providing detailed information and search functionalities, Paws & Found facilitates the adoption process, helping animals find their forever homes",
-    image: "/images/WebsitePhoto.png",
+    image: "/myPortfolio/images/WebsitePhoto.png",
     link: "https://www.pawsandfound.org/",
     icons: ["fab fa-node-js", "fab fa-js", "fab fa-bootstrap"],
     stack: [
@@ -36,7 +36,7 @@ const projectsData: Project[] = [
     summary: "A travel website for booking flights, hotels, and car rentals.",
     description:
       "A travel website that allows users to book flights, hotels, and car rentals. Users can also explore popular destinations and read travel guides.",
-    image: "/images/travelWebsite.png",
+    image: "/myPortfolio/images/travelWebsite.png",
     link: "",
     icons: [""],
     stack: [
@@ -61,7 +61,7 @@ const projectsData: Project[] = [
     summary: "A hiking and camping gear app for outdoor enthusiasts.",
     description:
       "Effortlessly manage and shop for hiking and camping gear. Admins handle inventory, pricing, and users, while customers enjoy easy sign-up, cart checkout, order history, and account updates.",
-    image: "/images/trailBlitz.png",
+    image: "/myPortfolio/images/trailBlitz.png",
     link: "",
     icons: [""],
     stack: [
