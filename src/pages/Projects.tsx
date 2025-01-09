@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import projectsData from "../projectsData";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   useEffect(() => {
@@ -19,14 +20,21 @@ const Projects = () => {
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.summary}</p>
                 <div className="px-auto">
-                  <a
+                  <Link
+                    to={`/project/${project.id}`}
                     className="btn btn-primary m-3"
-                    href={`/myPortfolio/project/${project.id}`}
                     role="button"
                   >
                     View Project
-                  </a>
-                  {/* Only show the button if the project has a link */}
+                  </Link>
+                  {/* <a
+                    className="btn btn-primary m-3"
+                    href={`/project/${project.id}`}
+                    role="button"
+                  >
+                    View Project
+                  </a> */}
+                  {/* Only show the button if the project has link */}
                   {project.link && (
                     <a
                       className="btn btn-outline-primary px-auto"
