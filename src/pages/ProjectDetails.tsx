@@ -14,6 +14,13 @@ const ProjectDetails = () => {
     <>
       {" "}
       <div style={{ maxWidth: "800px", margin: "0 auto", padding: "16px" }}>
+        <button
+          className="btn"
+          role="button"
+          onClick={() => window.history.back()}
+        >
+          <i className="bi bi-arrow-left-square fs-2"></i>
+        </button>
         <h1 className="d-flex justify-content-center mb-5">{project.title}</h1>
         {/* display techstack */}
         <h3 className="d-flex justify-content-center mb-3 fw-bold">

@@ -13,26 +13,6 @@ export interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "My Portfolio",
-    summary:
-      "The design process of my portfolio website, showcasing my projects.",
-    description: `A personal portfolio website that showcases my projects and skills. The website is designed to be user-friendly and visually appealing, providing visitors with an overview of my work and experience. The website features a clean and modern design, with easy navigation and clear information about my projects and background. <a class="link-opacity-10" href="https://xd.adobe.com/view/9cf5d5f4-2934-4e24-b5a3-02898d53f41d-c9a6/?fullscreen">View Prototype</a> `,
-    image: "/myPortfolio/images/websiteScreenshot.png",
-    link: "",
-    icons: ["fab fa-react", "fab fa-github", "fab fa-bootstrap"],
-    stack: [
-      "Bootstrap",
-      "React",
-      "React Router",
-      "React-PDF",
-      "GitHub",
-      "GitHub Pages",
-      "Vite",
-    ],
-    documentation: "/myPortfolio/documents/portfolioWireframe.pdf",
-  },
-  {
-    id: 2,
     title: "Paws & Found - Website",
     summary:
       "Designed to help connect pets at animal shelters to loving homes.",
@@ -53,7 +33,7 @@ const projectsData: Project[] = [
     documentation: "",
   },
   {
-    id: 3,
+    id: 2,
     title: "triplify - Website",
     summary: "A travel website for planning your trip itinerary.",
     description:
@@ -84,7 +64,7 @@ const projectsData: Project[] = [
     documentation: "/myPortfolio/documents/triplify.pdf",
   },
   {
-    id: 4,
+    id: 3,
     title: "TrailBlitz - Phone App",
     summary: "A hiking and camping gear app for outdoor enthusiasts.",
     description:
@@ -103,7 +83,7 @@ const projectsData: Project[] = [
     documentation: "/myPortfolio/documents/trailblitz.pdf",
   },
   {
-    id: 5,
+    id: 4,
     title: "ShelterConnect - App Concept & UI Design",
     summary:
       "An app concept designed to connect people with adoptable pets from local animal shelters.",
@@ -116,7 +96,7 @@ const projectsData: Project[] = [
     documentation: "/myPortfolio/documents/shelterConnect.pdf",
   },
   {
-    id: 6,
+    id: 5,
     title:
       "American Technology Initiative - Website - Service Learning Project",
     summary:
@@ -133,6 +113,26 @@ const projectsData: Project[] = [
     ],
     stack: ["Django", "PostgreSQL", "Python", "React", "GitLab"],
     documentation: "",
+  },
+  {
+    id: 6,
+    title: "My Portfolio",
+    summary:
+      "The design process of my portfolio website, showcasing my projects.",
+    description: `A personal portfolio website that showcases my projects and skills. The website is designed to be user-friendly and visually appealing, providing visitors with an overview of my work and experience. The website features a clean and modern design, with easy navigation and clear information about my projects and background. <a class="link-opacity-10" href="https://xd.adobe.com/view/9cf5d5f4-2934-4e24-b5a3-02898d53f41d-c9a6/?fullscreen">View Prototype</a> `,
+    image: "/myPortfolio/images/websiteScreenshot.png",
+    link: "",
+    icons: ["fab fa-react", "fab fa-github", "fab fa-bootstrap"],
+    stack: [
+      "Bootstrap",
+      "React",
+      "React Router",
+      "React-PDF",
+      "GitHub",
+      "GitHub Pages",
+      "Vite",
+    ],
+    documentation: "/myPortfolio/documents/portfolioWireframe.pdf",
   },
 ];
 

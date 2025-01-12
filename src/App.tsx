@@ -10,6 +10,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
   const [data, setData] = useState([]);

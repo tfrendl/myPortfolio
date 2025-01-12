@@ -153,3 +153,8 @@ container {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   transform: translateY(-2px); /* Lift the button slightly on hover */
 }
+
+.bi-arrow-left-square:hover {
+  color: #c99f88;
+  transform: translateY(-2px);
+}
