@@ -12,8 +12,26 @@ const ProjectDetails = () => {
   return (
     // project template
     <>
+      {" "}
       <div style={{ maxWidth: "800px", margin: "0 auto", padding: "16px" }}>
         <h1 className="d-flex justify-content-center mb-5">{project.title}</h1>
+        {/* display techstack */}
+        <h3 className="d-flex justify-content-center mb-3 fw-bold">
+          Tech Stack
+        </h3>
+        <div className="d-flex justify-content-center mb-5">
+          <p>
+            {project.stack.map((stack, index) => (
+              <span
+                key={index}
+                className="badge bg-secondary fs-6 fw-light"
+                style={{ margin: "5px" }}
+              >
+                {stack}
+              </span>
+            ))}
+          </p>
+        </div>
         <img
           src={project.image}
           alt={project.title}
@@ -34,19 +52,6 @@ const ProjectDetails = () => {
               <a href={project.documentation}>to the PDF!</a>
             </p>
           </object>
-        </div>
-
-        {/* display techstack */}
-        <div>
-          {project.stack.map((stack, index) => (
-            <span
-              key={index}
-              className="badge bg-secondary"
-              style={{ margin: "4px" }}
-            >
-              {stack}
-            </span>
-          ))}
         </div>
 
         {/* check if there is a link, if so, display */}
