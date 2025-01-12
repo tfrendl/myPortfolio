@@ -22,22 +22,15 @@ const Projects = () => {
                 <div className="px-auto">
                   <Link
                     to={`/project/${project.id}`}
-                    className="btn btn-primary m-3"
+                    className="resume-button-md m-3"
                     role="button"
                   >
                     View Project
                   </Link>
-                  {/* <a
-                    className="btn btn-primary m-3"
-                    href={`/project/${project.id}`}
-                    role="button"
-                  >
-                    View Project
-                  </a> */}
                   {/* Only show the button if the project has link */}
                   {project.link && (
                     <a
-                      className="btn btn-outline-primary px-auto"
+                      className="resume-button-md-inverse px-auto"
                       href={project.link}
                       role="button"
                     >

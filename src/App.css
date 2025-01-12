@@ -93,6 +93,13 @@ container {
   color: #3e4b50;
 }
 
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .resume-button {
   background-color: #fdf5e6;
   color: #4b4b4b;
@@ -108,7 +115,39 @@ container {
   transition: all 0.2s ease-in-out; /* Smooth hover animation */
 }
 
-.resume-button:hover {
+.resume-button-md {
+  background-color: #fdf5e6;
+  color: #4b4b4b;
+  border: 2px solid #d2a679;
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.resume-button-md-inverse {
+  background-color: #d2a679;
+  color: #fdf5e6;
+  border: 2px solid #4b4b4b;
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.resume-button:hover,
+.resume-button-md:hover,
+.resume-button-md-inverse:hover {
   background-color: #f9e9d2;
   color: #4b4b4b;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */

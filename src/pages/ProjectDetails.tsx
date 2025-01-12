@@ -19,8 +19,22 @@ const ProjectDetails = () => {
           alt={project.title}
           style={{ width: "100%" }}
         />
-
         <p className="mt-4">{project.description}</p>
+
+        {/* display pdf */}
+        <div className="pdf-container">
+          <object
+            data={project.documentation}
+            type="application/pdf"
+            width="100%"
+            height="100%"
+          >
+            <p>
+              Alternative text - include a link{" "}
+              <a href={project.documentation}>to the PDF!</a>
+            </p>
+          </object>
+        </div>
 
         {/* display techstack */}
         <div>
@@ -35,16 +49,7 @@ const ProjectDetails = () => {
           ))}
         </div>
 
-        {/* <div>
-          {project.icons.map((icon, index) => (
-            <i
-              key={index}
-              className={`${icon} fa-2x`}
-              style={{ margin: "8px" }}
-              data-mdb-ripple-color="dark"
-            ></i>
-          ))}
-        </div> */}
+        {/* check if there is a link, if so, display */}
         {project.link && (
           <a
             href={project.link}

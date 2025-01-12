@@ -78,7 +78,7 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <button className="btn btn-primary" type="submit">
+        <button className="resume-button-md" type="submit" role="button">
           Send Email
         </button>
       </form>
