@@ -4,8 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectDetails from "./pages/ProjectDetails";
 import Projects from "./pages/Projects";
-import { Route } from "react-router-dom";
-import { HashRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import axios from "axios";
@@ -27,7 +26,7 @@ function App() {
     <>
       <div className="app">
         <div className="content">
-          <Router basename="/myPortfolio">
+          <Router>
             <ScrollToTop />
             <Navbar />
             <div id="center-overlay" className="content transparent-overlay">
