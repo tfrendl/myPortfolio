@@ -53,7 +53,7 @@ const ContactForm = () => {
             console.log("reCAPTCHA solved, token:", token);
           }}
         ></div>
-        <div className="mb-3">
+        <div className="mb-2">
           <input
             type="text"
             className="form-control"
@@ -62,7 +62,7 @@ const ContactForm = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <input
             type="email"
             className="form-control"
@@ -80,7 +80,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <button className="resume-button-md" type="submit" role="button">
-          Send Email
+          Send Message
         </button>
       </form>
     </>

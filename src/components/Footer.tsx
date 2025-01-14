@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             {/* <!-- Linkedin --> */}
             <a
-              className="btn btn-link btn-floating m-1"
+              className="btn btn-link btn-floating m-1 fs-4"
               href="https://www.linkedin.com/in/talia-frendl/"
               role="button"
               data-mdb-ripple-color="dark"
