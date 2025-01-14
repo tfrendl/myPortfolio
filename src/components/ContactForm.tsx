@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
 
   // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -35,7 +36,8 @@ const ContactForm = () => {
         alert("Message sent successfully!");
       })
       .catch((error) => {
-        console.error("error:", error);
+        console.error("Error:", error);
+        alert("Something went wrong. Please try again.");
       });
   };
 
@@ -43,7 +45,7 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="contactForm py-5 col-md-4 mx-auto"
+        className="contactForm py-5 col-md-4 mx-auto needs-validation"
       >
         <div className="mb-2">
           <input
@@ -52,6 +54,7 @@ const ContactForm = () => {
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </div>
         <div className="mb-2">
@@ -61,6 +64,7 @@ const ContactForm = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className="mb-3">
@@ -69,6 +73,7 @@ const ContactForm = () => {
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            required
           ></textarea>
         </div>
 
