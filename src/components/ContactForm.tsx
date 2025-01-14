@@ -6,14 +6,13 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [recaptchaToken, setRecaptchaToken] = useState("");
 
   // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // EmailJS service and template IDs
-    const servieId = import.meta.env.VITE_SERVICE_ID;
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
     const templateId = import.meta.env.VITE_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
@@ -27,15 +26,16 @@ const ContactForm = () => {
 
     // Send email using EmailJS
     emailjs
-      .send(servieId, templateId, templateParams, publicKey)
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log("Email sent!", response);
         setName("");
         setEmail("");
         setMessage("");
+        alert("Message sent successfully!");
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
+        console.error("error:", error);
       });
   };
 
@@ -45,14 +45,6 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="contactForm py-5 col-md-4 mx-auto"
       >
-        <div
-          className="g-recaptcha"
-          data-sitekey="6Ldv46cqAAAAAHMQsBEPg1TNwoiZyIpI7t1FR_Eh"
-          data-callback={(token: string) => {
-            setRecaptchaToken(token);
-            console.log("reCAPTCHA solved, token:", token);
-          }}
-        ></div>
         <div className="mb-2">
           <input
             type="text"
@@ -79,6 +71,7 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
+
         <button className="resume-button-md" type="submit" role="button">
           Send Message
         </button>

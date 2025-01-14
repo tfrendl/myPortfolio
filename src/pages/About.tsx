@@ -22,7 +22,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <img
-              src="/myPortfolio/images/amalfi.jpeg"
+              src="/images/amalfi.jpeg"
               alt="About Me - Section 1"
               className="img-fluid rounded"
               style={{ height: "400px", width: "auto" }}
@@ -58,7 +58,7 @@ const About = () => {
         <div className="row align-items-center lh-lg d-flex">
           <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
             <img
-              src="/myPortfolio/images/rome.jpeg"
+              src="/images/rome.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
               style={{ height: "400px", width: "auto" }}
@@ -106,7 +106,7 @@ const About = () => {
         <div className="row align-items-center lh-lg">
           <div className="col-lg-6">
             <img
-              src="/myPortfolio/images/japan.jpeg"
+              src="/images/japan.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
               style={{ height: "400px", width: "auto" }}
@@ -149,7 +149,7 @@ const About = () => {
         <div className="row align-items-center lh-lg">
           <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
             <img
-              src="/myPortfolio/images/austriaflower.jpeg"
+              src="/images/austriaflower.jpeg"
               alt="About Me - Section 4"
               className="img-fluid rounded"
               style={{ height: "400px", width: "auto" }}
@@ -174,7 +174,7 @@ const About = () => {
         <div className="row align-items-center lh-lg">
           <div className="col-lg-6">
             <img
-              src="/myPortfolio/images/austria4.jpeg"
+              src="/images/austria4.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
               style={{ height: "400px", width: "auto" }}
