@@ -3,7 +3,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="navbar nabvar-expand-lg navbar-light">
+    <nav className="navbar nabvar-expand-lg navbar-light fs-5">
       <div className="container-fluid">
         <a className="navbar-brand ms-4" href="#">
           <img

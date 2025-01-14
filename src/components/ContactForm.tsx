@@ -74,6 +74,7 @@ const ContactForm = () => {
         <div className="mb-3">
           <textarea
             className="form-control"
+            placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>

@@ -20,7 +20,7 @@ const Footer = () => {
             </a>
             {/* <!-- Github --> */}
             <a
-              className="btn btn-link btn-floating m-1"
+              className="btn btn-link btn-floating m-1 fs-2"
               href="https://github.com/tfrendl"
               role="button"
               data-mdb-ripple-color="dark"
@@ -29,9 +29,7 @@ const Footer = () => {
             </a>
           </div>
           {/* <!-- Copyright --> */}
-          <div className="text-center mb-3">
-            <small>© 2025 | Talia Frendl</small>
-          </div>
+          <div className="text-center mb-3">© 2025 | Talia Frendl</div>
         </div>
 
         {/* <!-- Copyright --> */}
