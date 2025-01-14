@@ -1,3 +1,4 @@
 <script>
-  window.location.href = '/myPortfolio' + window.location.pathname;
+  const currentPath = window.location.pathname.replace('/myPortfolio', '');
+  window.location.href = '/myPortfolio' + currentPath;
 </script>
