@@ -12,6 +12,12 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Check if all fields are filled
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+
     // EmailJS service and template IDs
     const serviceId = import.meta.env.VITE_SERVICE_ID;
     const templateId = import.meta.env.VITE_TEMPLATE_ID;
