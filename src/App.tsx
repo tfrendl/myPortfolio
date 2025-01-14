@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [data, setData] = useState([]);
@@ -27,8 +28,9 @@ function App() {
       <div className="app">
         <div className="content">
           <Router>
+            <ScrollToTop />
             <Navbar />
-            <div className="content transparent-overlay">
+            <div id="center-overlay" className="content transparent-overlay">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
           {/* <!-- Copyright --> */}
           <div className="text-center mb-3">
-            <small>© 2024 | Talia Frendl</small>
+            <small>© 2025 | Talia Frendl</small>
           </div>
         </div>
 

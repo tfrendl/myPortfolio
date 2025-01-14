@@ -158,3 +158,10 @@ container {
   color: #c99f88;
   transform: translateY(-2px);
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
