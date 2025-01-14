@@ -1,4 +1,16 @@
-<script>
-  const currentPath = window.location.pathname.replace('/myPortfolio', '');
-  window.location.href = '/myPortfolio' + currentPath;
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>
+    // Remove the base URL only once
+    const redirectTo = window.location.pathname.replace('/myPortfolio', '');
+    // Redirect to the correct URL
+    window.location.href = '/myPortfolio' + redirectTo;
+  </script>
+</body>
+</html>
