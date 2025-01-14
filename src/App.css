@@ -45,7 +45,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   background: rgba(255, 255, 255, 0.275);
-  z-index: 1;
+  z-index: 0;
   overflow: auto;
 }
 
@@ -164,4 +164,38 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
+}
+
+/* Mobile styles (small screens) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/* Ensure the buttons don't overflow the card */
+.card-body .resume-button-md,
+.card-body .resume-button-md-inverse {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Optional: Add margin adjustments for smaller screens */
+@media (max-width: 768px) {
+  .card-body .d-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar-collapse {
+  display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+.nav-item {
+  z-index: 2;
 }

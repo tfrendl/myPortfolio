@@ -91,7 +91,7 @@ const projectsData: Project[] = [
     image: "/images/ATIProject.png",
     logo: "",
     link: "https://www.americantechnologydevelopment.org/",
-    linkDescription: "Learn about the American Technology Initiative",
+    linkDescription: "ATI's Website",
     icons: [
       "fa-brands fa-react",
       "fa-brands fa-python",

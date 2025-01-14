@@ -25,10 +25,10 @@ const About = () => {
               src="/images/amalfi.jpeg"
               alt="About Me - Section 1"
               className="img-fluid rounded"
-              style={{ height: "400px", width: "auto" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
-          <div className="col-lg-6 lh-lg">
+          <div className="col-lg-6 lh-lg mt-5">
             <h2>Hi!</h2>
             <p>
               I'm Talia Frendl, a junior fullstack developer with a passion for
@@ -61,10 +61,10 @@ const About = () => {
               src="/images/rome.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
-              style={{ height: "400px", width: "auto" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-5">
             <h4 className="fw-bold">Skills & Technologies</h4>
 
             <p>
@@ -112,7 +112,7 @@ const About = () => {
               style={{ height: "400px", width: "auto" }}
             />
           </div>
-          <div className="col-lg-6 order-lg-1">
+          <div className="col-lg-6 order-lg-1 mt-5">
             <h4 className="fw-bold">My Journey</h4>
             <p>
               My love for problem-solving and caring for all living things
@@ -152,10 +152,10 @@ const About = () => {
               src="/images/austriaflower.jpeg"
               alt="About Me - Section 4"
               className="img-fluid rounded"
-              style={{ height: "400px", width: "auto" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-5">
             <h4 className="fw-bold">Collaboration & Leadership</h4>
             <p>
               I thrive in team-based environments and have experience using
@@ -177,10 +177,10 @@ const About = () => {
               src="/images/austria4.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
-              style={{ height: "400px", width: "auto" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
-          <div className="col-lg-6 order-lg-1">
+          <div className="col-lg-6 order-lg-1 mt-5">
             <h4 className="fw-bold">Beyond Coding</h4>
             <p>
               When I'm not coding, you'll often find me:
