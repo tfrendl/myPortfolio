@@ -25,18 +25,20 @@ const ProjectDetails = () => {
 
         {/* project icon */}
         {project.logo && (
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center rounded-circle">
             <img
-              className="img-fluid"
-              src="/myPortfolio/images/pawsIcon.png"
-              alt="Paws Icon"
-              style={{ maxWidth: "10%" }}
+              className="rounded-circle m-3"
+              src={project.logo}
+              alt="Project Logo"
+              style={{
+                maxWidth: "10%",
+              }}
             />
           </div>
         )}
 
         {/* title */}
-        <h1 className="d-flex justify-content-center text-center mb-5 fw-bold">
+        <h1 className="display-3 d-flex justify-content-center text-center mb-5 fw-bold">
           {project.title}
         </h1>
         {/* techstack */}

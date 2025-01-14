@@ -41,7 +41,7 @@ const projectsData: Project[] = [
     description:
       "A travel website that allows users to book flights, hotels, and car rentals. Users can also explore popular destinations and read travel guides.",
     image: "/myPortfolio/images/travelWebsite.png",
-    logo: "",
+    logo: "/myPortfolio/images/triplifyIcon.png",
     link: "",
     icons: [
       "fab fa-solid fa-database",
@@ -73,7 +73,7 @@ const projectsData: Project[] = [
     description:
       "Effortlessly manage and shop for hiking and camping gear. Admins handle inventory, pricing, and users, while customers enjoy easy sign-up, cart checkout, order history, and account updates.",
     image: "/myPortfolio/images/trailblitz.png",
-    logo: "",
+    logo: "/myPortfolio/images/trailblitzLogo.png",
     link: "",
     icons: ["fa-brands fa-android", "fa-brands fa-java"],
     stack: [
@@ -94,7 +94,7 @@ const projectsData: Project[] = [
     description:
       "ShelterConnect is an app concept designed to connect people with adoptable pets from local animal shelters. Whether you're looking for a specific type of pet (cat, dog, other), searching by breed, or wanting to browse featured pets, ShelterConnect makes it easy to find a pet. Users can save their favorite pets to view later. With a simple and intuitive interface designed for all age groups, ShelterConnect centralizes animals for adoption from a variety of shelters.",
     image: "/myPortfolio/images/shelterConnect.png",
-    logo: "",
+    logo: "/myPortfolio/images/shelterConnectLogo.png",
     link: "",
     icons: [""],
     stack: ["Adobe Illustrator", "Adobe XD"],
@@ -102,7 +102,7 @@ const projectsData: Project[] = [
   },
   {
     id: 5,
-    title: "American Technology Initiative",
+    title: "American Technology Initiative Inc.",
     summary:
       "Participated in the development of a project management application for the American Technology Initiative.",
     description:
@@ -126,7 +126,7 @@ const projectsData: Project[] = [
       "The design process of my portfolio website, showcasing my projects.",
     description: `A personal portfolio website that showcases my projects and skills. The website is designed to be user-friendly and visually appealing, providing visitors with an overview of my work and experience. The website features a clean and modern design, with easy navigation and clear information about my projects and background. <a class="link-opacity-10" href="https://xd.adobe.com/view/9cf5d5f4-2934-4e24-b5a3-02898d53f41d-c9a6/?fullscreen">View Prototype</a> `,
     image: "/myPortfolio/images/websiteScreenshot.png",
-    logo: "",
+    logo: "/myPortfolio/images/initialImg.png",
     link: "",
     icons: ["fab fa-react", "fab fa-github", "fab fa-bootstrap"],
     stack: [
