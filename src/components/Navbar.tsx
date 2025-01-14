@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="d-flex align-items-center">
           <NavLink
-            to="/"
+            to="/myPortfolio/"
             className={({ isActive }) =>
               isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
             }
@@ -26,7 +26,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/myPortfolio/projects"
             className={({ isActive }) =>
               isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
             }
@@ -34,7 +34,7 @@ const Navbar = () => {
             Projects
           </NavLink>
           <NavLink
-            to="/about"
+            to="/myPortfolio/about"
             className={({ isActive }) =>
               isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
             }
@@ -42,7 +42,7 @@ const Navbar = () => {
             About
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/myPortfolio/contact"
             className={({ isActive }) =>
               isActive ? "nav-link mx-3 outline-current-page" : "nav-link mx-3"
             }
