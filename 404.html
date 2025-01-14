@@ -7,10 +7,8 @@
 </head>
 <body>
   <script>
-    // Remove the base URL only once
-    const redirectTo = window.location.pathname.replace('/myPortfolio', '');
-    // Redirect to the correct URL
-    window.location.href = '/myPortfolio' + redirectTo;
+const redirectTo = window.location.pathname.replace('/myPortfolio/', '/');
+window.location.href = '/myPortfolio' + redirectTo;
   </script>
 </body>
 </html>
