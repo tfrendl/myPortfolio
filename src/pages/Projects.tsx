@@ -8,21 +8,21 @@ const Projects = () => {
   }, []);
   return (
     <>
-      <h1 className=" mx-auto d-flex justify-content-center mb-5">
+      <h1 className=" mx-auto d-flex justify-content-center mb-5 text-decoration-underline">
         My Projects
       </h1>
-      <div className="row row-cols-1 row-cols-md-2 mx-auto">
+      <div className="row row-cols-1 row-cols-md-2 g-5 mx-auto">
         {projectsData.map((project) => (
-          <div className="col">
-            <div className="card mb-4">
+          <div className="col mb-4">
+            <div className="card">
               <img src={project.image} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h3 className="card-title">{project.title}</h3>
                 <p className="card-text">{project.summary}</p>
-                <div className="px-auto">
+                <div className="d-flex gap-4 align-items-center">
                   <Link
                     to={`/project/${project.id}`}
-                    className="resume-button-md m-3"
+                    className="resume-button-md my-3"
                     role="button"
                   >
                     View Project
@@ -30,11 +30,11 @@ const Projects = () => {
                   {/* Only show the button if the project has link */}
                   {project.link && (
                     <a
-                      className="resume-button-md-inverse px-auto"
+                      className="resume-button-md-inverse"
                       href={project.link}
                       role="button"
                     >
-                      View Website
+                      {project.linkDescription}
                     </a>
                   )}
                 </div>

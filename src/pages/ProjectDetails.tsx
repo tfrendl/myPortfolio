@@ -60,11 +60,30 @@ const ProjectDetails = () => {
           src={project.image}
           alt={project.title}
           style={{ width: "100%" }}
-          className="img-thumbnail"
+          className="img-thumbnail mt-3"
         />
 
-        {/* summary */}
-        <p className="mt-4 mb-5">{project.description}</p>
+        {/* description */}
+        <div className="mt-5 mb-5 fs-5">
+          {project.description.map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+
+        {/* check if there is a link, if so, display */}
+        {project.link && (
+          <a
+            href={project.link}
+            className="resume-button mb-5 d-flex justify-content-center"
+            role="button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {project.linkDescription}
+          </a>
+        )}
 
         {/* view notes prompt */}
 
@@ -91,23 +110,6 @@ const ProjectDetails = () => {
               </object>
             </div>
           </>
-        )}
-
-        {/* check if there is a link, if so, display */}
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              color: "#007BFF",
-              textDecoration: "none",
-              marginTop: "16px",
-              display: "inline-block",
-            }}
-          >
-            View Website
-          </a>
         )}
       </div>
     </>
