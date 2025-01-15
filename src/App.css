@@ -185,7 +185,7 @@ body {
 }
 
 /* Optional: Add margin adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .card-body .d-flex {
     flex-direction: column;
     gap: 10px;
@@ -196,6 +196,9 @@ body {
     width: 100%; /* Ensure it takes up the full width */
 }
 
+
+/* Increase z-index for the nav items */
 .nav-item {
-  z-index: 2;
+  position: relative;
+  z-index: 1060; /* Higher than navbar and collapse items */
 }

@@ -1,6 +1,17 @@
+import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation();
+
+  const [isOpen, setIsOpen] = useState(false); // State to toggle the hamburger menu
+
+  useEffect(() => {
+    setIsOpen(false); // Close the menu whenever the route changes
+  }, [location]);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle the menu when the hamburger icon is clicked
+  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light fs-5">
@@ -19,17 +30,19 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={toggleMenu}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isOpen ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"> </span>
         </button>
 
         {/* Navigation Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} // Apply 'show' class when menu is open
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink
