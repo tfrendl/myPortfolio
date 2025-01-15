@@ -14,14 +14,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fs-5 fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand ms-4" href="#">
           <img
             src="/images/initialImg.png"
             alt="Initials"
             className="navbar-logo"
-            style={{ height: "30px", marginRight: "10px" }}
+            style={{ height: "20px", marginRight: "10px" }}
           />
           Talia Joy Frendl
         </a>

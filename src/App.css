@@ -1,3 +1,9 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #3e4b50;
+  box-sizing: border-box;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,7 @@
 }
 
 .content {
-  flex: 1;
+  flex-grow: 1;
 }
 
 .carousel-inner img {
@@ -15,21 +21,42 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background: linear-gradient(
     to right,
     rgba(201, 159, 136, 0.7),
     rgba(145, 163, 176, 0.7)
   );
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-* {
-  font-family: "Montserrat", sans-serif;
-  color: #3e4b50;
+header, .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(201, 159, 136, 0.7),
+    rgba(145, 163, 176, 0.7)
+  );
+}
+
+
+footer {
+  height: 60px;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(201, 159, 136, 0.7),
+    rgba(145, 163, 176, 0.7)
+  );
+  z-index: 19;
+  width: 100vw;
 }
 
 .fw-medium {
@@ -37,17 +64,15 @@ body {
 }
 
 .transparent-overlay {
-  position: absolute;
-  top: 15%;
-
-  left: 0;
-  height: 60%;
-  padding: 60px;
+  margin-top: 60px;
+  padding: 20px;
   box-sizing: border-box;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.275);
+  background: linear-gradient(
+    to right,
+    rgba(201, 159, 136, 0.1),
+    rgba(145, 163, 176, 0.1)
+  );
   z-index: 0;
-  overflow: auto;
 }
 
 .nav-link.outline-current-page {
@@ -164,7 +189,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  width: 100%;
+  //overflow: auto;
 }
 
 /* Mobile styles (small screens) */
@@ -200,14 +226,15 @@ body {
   position: relative;
   z-index: 1060; /* Higher than navbar and collapse items */
 }
-/* Ensure footer icons are always visible */
 .footer-icons {
-  display: flex;
-  justify-content: center; /* Align the icons in the center */
-  align-items: center; /* Vertically center the icons */
+  display: flex; /* Ensures icons are visible */
+  justify-content: center; /* Center the icons */
+  gap: 10px; /* Adds spacing between icons */
 }
 
-.footer-icons .btn {
-  font-size: 1.5rem; /* Or another size that suits your design */
-  z-index: 1000; /* Ensure the icons are always on top */
+.footer-icons a {
+  font-size: 1.5rem; /* Adjust the size of the icons */
+  color: #333; /* Default color */
+  z-index: 1060; /* Higher than the footer */
 }
+

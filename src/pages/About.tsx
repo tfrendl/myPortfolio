@@ -16,7 +16,7 @@ const About = () => {
         and international experiences.
       </h4>
 
-      <div className="container my-5">
+      <div className="container-fluid my-5">
         <hr className="my-4 border-light" />
         {/* Section 1: Photo Left, Text Right */}
         <div className="row align-items-center">

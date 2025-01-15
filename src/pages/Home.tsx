@@ -8,8 +8,11 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="container-fluid d-flex justify-content-center align-items-center">
-        <div className="row w-100" style={{ maxWidth: "1600px" }}>
+      <div className="container-fluid d-flex justify-content-center">
+        <div
+          className="row w-100"
+          style={{ maxWidth: "1600px", minHeight: "90vh" }}
+        >
           <div className="col-lg-6 d-flex flex-column justify-content-center text-center mb-4">
             <h1 className="fw-bold mb-3">Hi there!</h1>
             <h1 className="display-4 mb-5">

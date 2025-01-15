@@ -1,16 +1,14 @@
 import "@fortawesome/fontawesome-free/css/all.min.css"; // For icons
-import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-white py-3 mt-auto fixed-bottom">
-      <hr />
+    <footer className="container-fluid text-center text-white">
       {/* Grid container */}
-      <div className="container d-flex justify-content-between align-items-center">
-        <div className="footer-icons d-flex justify-content-center w-100">
+      <div className="container-fluid d-flex justify-content-between">
+        <div className="footer-icons w-100 d-flex justify-content-start">
           {/* LinkedIn Icon */}
           <a
-            className="btn btn-link btn-floating m-1 fs-4"
+            className="btn btn-link"
             href="https://www.linkedin.com/in/talia-frendl/"
             role="button"
             data-mdb-ripple-color="dark"
@@ -19,7 +17,7 @@ const Footer = () => {
           </a>
           {/* GitHub Icon */}
           <a
-            className="btn btn-link btn-floating m-1 fs-4"
+            className="btn btn-link"
             href="https://github.com/tfrendl"
             role="button"
             data-mdb-ripple-color="dark"
@@ -27,9 +25,10 @@ const Footer = () => {
             <i className="fab fa-github"></i>
           </a>
         </div>
+        <div className="footer-text w-100 d-flex align-items-center justify-content-end">
+          <small>{/* Copyright */}© 2025 | Talia Frendl </small>
+        </div>
       </div>
-      {/* Copyright */}
-      <div className="text-center mb-3">© 2025 | Talia Frendl</div>
     </footer>
   );
 };

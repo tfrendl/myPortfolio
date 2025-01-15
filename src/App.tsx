@@ -24,22 +24,23 @@ function App() {
 
   return (
     <>
-      <div className="app d-flex flex-column min-vh-100">
-        <div className="content flex-grow-1">
-          <Router>
-            <ScrollToTop />
+      <div className=" app d-flex flex-column min-vh-100">
+        <Router>
+          <header>
             <Navbar />
-            <div id="center-overlay" className="content transparent-overlay">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/project/:id" element={<ProjectDetails />} />
-              </Routes>
-            </div>
-          </Router>
-        </div>
+          </header>
+          <ScrollToTop />
+
+          <div className="content transparent-overlay flex-grow-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/project/:id" element={<ProjectDetails />} />
+            </Routes>
+          </div>
+        </Router>
         <Footer />
       </div>
     </>

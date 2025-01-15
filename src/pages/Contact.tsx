@@ -15,24 +15,24 @@ const Contact = () => {
           <ContactForm />
         </div>
         <div>
-          <div className="d-flex justify-content-center align-items-center mb-3">
+          <div className="d-flex w-100 justify-content-center align-items-center mb-3">
             {/* <!-- Linkedin --> */}
             <a
-              className="btn btn-link btn-floating m-1 fs-3"
+              className="btn btn-link"
               href="https://www.linkedin.com/in/talia-frendl/"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i className="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in fa-lg"></i>
             </a>
             {/* <!-- Github --> */}
             <a
-              className="btn btn-link btn-floating m-1 fs-3"
+              className="btn btn-link"
               href="https://github.com/tfrendl"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i className="fab fa-github"></i>
+              <i className="fab fa-github fa-lg"></i>
             </a>
           </div>
         </div>
