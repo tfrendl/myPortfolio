@@ -48,8 +48,8 @@ const Navbar = () => {
               : "transparent", // Light background when open
             padding: "10px",
             borderRadius: "5px",
-            boxShadow: isOpen ? "0px 4px 6px rgba(0,0,0,0.1)" : "", // Optional: Add some shadow for a better effect
-          }} // Optional: Add some shadow for a better effect}}
+            boxShadow: isOpen ? "0px 4px 6px rgba(0,0,0,0.1)" : "",
+          }}
         >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
