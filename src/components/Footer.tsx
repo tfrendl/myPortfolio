@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-white py-3 mt-auto fixed-bottom">
+    <footer className="text-center text-white py-3 mt-auto sticky-bottom">
       <hr />
       {/* Grid container */}
       <div className="container d-flex justify-content-between align-items-center">
