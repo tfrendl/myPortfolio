@@ -16,23 +16,35 @@ const Contact = () => {
         </div>
         <div>
           <div className="d-flex w-100 justify-content-center align-items-center mb-3">
-            {/* <!-- Linkedin --> */}
+            {/* LinkedIn Icon */}
             <a
-              className="btn btn-link"
+              className="btn btn-link "
               href="https://www.linkedin.com/in/talia-frendl/"
-              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
               data-mdb-ripple-color="dark"
             >
-              <i className="fab fa-linkedin-in fa-lg"></i>
+              <img
+                className="img-fluid"
+                src="/images/linkedIn.png"
+                alt="LinkedIn Icon"
+                style={{ width: "auto", height: "30px" }}
+              ></img>
             </a>
-            {/* <!-- Github --> */}
+            {/* GitHub Icon */}
             <a
               className="btn btn-link"
               href="https://github.com/tfrendl"
-              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
               data-mdb-ripple-color="dark"
             >
-              <i className="fab fa-github fa-lg"></i>
+              <img
+                className="img-fluid"
+                src="/images/github.png"
+                alt="GitHub Icon"
+                style={{ width: "auto", height: "30px" }}
+              ></img>
             </a>
           </div>
         </div>
