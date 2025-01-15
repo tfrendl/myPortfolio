@@ -69,8 +69,8 @@ footer {
   box-sizing: border-box;
   background: linear-gradient(
     to right,
-    rgba(201, 159, 136, 0.1),
-    rgba(145, 163, 176, 0.1)
+    rgba(201, 159, 136, 0.0001),
+    rgba(145, 163, 176, 0.0001)
   );
   z-index: 0;
 }
@@ -184,6 +184,7 @@ container {
   color: #c99f88;
   transform: translateY(-2px);
 }
+
 html,
 body {
   height: 100%;
@@ -195,8 +196,6 @@ body {
 
 /* Mobile styles (small screens) */
 @media screen and (max-width: 768px) {
-
-
   .container {
     width: 100%;
   }
@@ -226,15 +225,3 @@ body {
   position: relative;
   z-index: 1060; /* Higher than navbar and collapse items */
 }
-.footer-icons {
-  display: flex; /* Ensures icons are visible */
-  justify-content: center; /* Center the icons */
-  gap: 10px; /* Adds spacing between icons */
-}
-
-.footer-icons a {
-  font-size: 1.5rem; /* Adjust the size of the icons */
-  color: #333; /* Default color */
-  z-index: 1060; /* Higher than the footer */
-}
-
