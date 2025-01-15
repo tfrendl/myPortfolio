@@ -197,9 +197,21 @@ body {
     width: 100% !important; /* Ensure it takes up the full width */
 }
 
+/* Override button size on larger screens */
+@media (min-width: 768px) {
+  .footer-icons .btn {
+    font-size: 1.5rem; /* Or another size that suits your design */
+  }
+}
 
 /* Increase z-index for the nav items */
 .nav-item {
   position: relative;
   z-index: 1060; /* Higher than navbar and collapse items */
+}
+/* Ensure footer icons are always visible */
+.footer-icons {
+  display: flex;
+  justify-content: center; /* Align the icons in the center */
+  align-items: center; /* Vertically center the icons */
 }
