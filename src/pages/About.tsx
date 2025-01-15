@@ -109,7 +109,7 @@ const About = () => {
               src="/images/japan.jpeg"
               alt="About Me - Section 2"
               className="img-fluid rounded"
-              style={{ height: "400px", width: "auto" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
           <div className="col-lg-6 order-lg-1 mt-5">
