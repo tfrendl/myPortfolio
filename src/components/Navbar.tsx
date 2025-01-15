@@ -23,7 +23,7 @@ const Navbar = () => {
             className="navbar-logo"
             style={{ height: "20px", marginRight: "10px" }}
           />
-          Talia Joy Frendl
+          <span className="font-color-dark-blue"> Talia Joy Frendl </span>
         </a>
 
         {/* Display hamburger on smaller screens */}
