@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div className="container-fluid d-flex justify-content-center align-items-center">
         <div className="row w-100" style={{ maxWidth: "1600px" }}>
-          <div className="col-lg-6 d-flex flex-column justify-content-center">
+          <div className="col-lg-6 d-flex flex-column justify-content-center text-center mb-4">
             <h1 className="fw-bold mb-3">Hi there!</h1>
             <h1 className="display-4 mb-5">
               <span className="fs-1">I'm</span>
@@ -24,6 +24,7 @@ const Home = () => {
               src="/images/homePhoto.png"
               alt="Profile Photo"
               className="img-fluid"
+              style={{ maxWidth: "100%", height: "auto" }}
             />
           </div>
         </div>

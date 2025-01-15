@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="text-center text-white py-3">
+      <footer className="text-center text-white py-3 mt-auto">
         <hr />
         {/* <!-- Grid container --> */}
         <div className="d-flex justify-content-between align-items-center px-4">

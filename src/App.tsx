@@ -24,8 +24,8 @@ function App() {
 
   return (
     <>
-      <div className="app">
-        <div className="content">
+      <div className="app d-flex flex-column min-vh-100">
+        <div className="content flex-grow-1">
           <Router>
             <ScrollToTop />
             <Navbar />

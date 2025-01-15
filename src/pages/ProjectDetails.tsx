@@ -31,7 +31,7 @@ const ProjectDetails = () => {
               src={project.logo}
               alt="Project Logo"
               style={{
-                maxWidth: "10%",
+                maxWidth: "20%",
               }}
             />
           </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fs-5">
+    <nav className="navbar navbar-expand-lg navbar-light fs-5 fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand ms-4" href="#">
           <img
