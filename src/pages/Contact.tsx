@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <div className="Contact container-fluid d-flex justify-content-center align-items-center row text-center">
-        <div className="mb-3">
+        <div className="mb-2">
           <h1>Contact Me</h1>
           <p>I'll be glad to answer your questions!</p>
           <ContactForm />

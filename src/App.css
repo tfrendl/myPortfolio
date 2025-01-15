@@ -181,8 +181,8 @@ body {
 /* Ensure the buttons don't overflow the card */
 .card-body .resume-button-md,
 .card-body .resume-button-md-inverse {
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* Optional: Add margin adjustments for smaller screens */
@@ -194,7 +194,7 @@ body {
   .navbar-collapse {
   display: flex;
     flex-direction: column;
-    width: 100%; /* Ensure it takes up the full width */
+    width: 100% !important; /* Ensure it takes up the full width */
 }
 
 
