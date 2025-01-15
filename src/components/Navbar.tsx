@@ -42,6 +42,14 @@ const Navbar = () => {
         <div
           className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} // Apply 'show' class when menu is open
           id="navbarNav"
+          style={{
+            backgroundColor: isOpen
+              ? "rgba(255, 255, 255, 0.9)"
+              : "transparent", // Light background when open
+            padding: "10px",
+            borderRadius: "5px",
+            boxShadow: isOpen ? "0px 4px 6px rgba(0,0,0,0.1)" : "", // Optional: Add some shadow for a better effect
+          }} // Optional: Add some shadow for a better effect}}
         >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
