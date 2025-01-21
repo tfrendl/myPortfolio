@@ -30,7 +30,8 @@ body {
   align-items: center;
 }
 
-header, .navbar {
+header,
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -43,7 +44,6 @@ header, .navbar {
     rgba(145, 163, 176, 0.7)
   );
 }
-
 
 footer {
   height: 60px;
@@ -191,7 +191,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  //overflow: auto;
 }
 
 /* Mobile styles (small screens) */
@@ -215,9 +214,10 @@ body {
     gap: 10px;
   }
   .navbar-collapse {
-  display: flex;
+    display: flex;
     flex-direction: column;
     width: 100% !important; /* Ensure it takes up the full width */
+  }
 }
 
 /* Increase z-index for the nav items */
