@@ -5,7 +5,7 @@ const DownloadButton = () => {
   return (
     <div className="mt-5">
       <a
-        href="/documents/Frendl_Resume.pdf"
+        href="/documents/Frendl_Resume2.pdf"
         download
         className="resume-button"
         role="button"
