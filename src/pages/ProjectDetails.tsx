@@ -1,9 +1,15 @@
 import { useParams } from "react-router-dom";
 import projectsData from "../projectsData";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { useState } from "react";
 
 const ProjectDetails = () => {
   const { id } = useParams<{ id: string }>();
   const project = projectsData.find((p) => p.id === Number(id));
+
+  const [showPDF, setShowPDF] = useState(false);
 
   if (!project) {
     return <p>Project not found.</p>;
@@ -31,37 +37,177 @@ const ProjectDetails = () => {
               src={project.logo}
               alt="Project Logo"
               style={{
-                maxWidth: "20%",
+                maxWidth: "10%",
               }}
             />
           </div>
         )}
 
         {/* title */}
-        <h1 className="display-3 d-flex justify-content-center text-center mb-5 fw-bold">
+        <h1 className="display-3 d-flex justify-content-center text-center fw-bold">
           {project.title}
         </h1>
-        {/* techstack */}
-        <h2 className="d-flex justify-content-center mb-3">Tech Stack</h2>
-        <div className="d-flex justify-content-center mb-5">
-          <p className="text-center">
-            {project.stack.map((stack, index) => (
-              <span
-                key={index}
-                className="badge bg-secondary fs-6 fw-light"
-                style={{ margin: "5px" }}
-              >
-                {stack}
-              </span>
-            ))}
-          </p>
+
+        {/* overview */}
+        <div className="d-flex justify-content-center text-center mb-5">
+          <p>{project.summary}</p>
         </div>
-        <img
-          src={project.image}
-          alt={project.title}
-          style={{ width: "100%" }}
-          className="img-thumbnail mt-3"
-        />
+
+        <Container fluid>
+          {/* row 1 */}
+          <Row className="mb-5">
+            <Col>
+              {" "}
+              {/* project image */}
+              <img
+                src={project.image}
+                alt={project.title}
+                style={{ width: "100%" }}
+                className="project-img-container"
+              />
+            </Col>
+            <Col>
+              {/* features */}
+              {project.keyFeatures.length > 0 && (
+                <>
+                  <h2 className="d-flex justify-content-center mb-3">
+                    Features
+                  </h2>
+
+                  <div className="d-flex justify-content-center mb-5">
+                    <ul>
+                      {project.keyFeatures.map((feature, index) => (
+                        <li key={index} className="mb-4">
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
+            </Col>
+          </Row>
+          <Row className="mb-5">
+            <Col>
+              {" "}
+              {/* my role */}
+              {project.myContributions.length > 0 && (
+                <>
+                  <h2 className="d-flex justify-content-center mb-3">
+                    My Role
+                  </h2>
+                  <div className="d-flex justify-content-center mb-5">
+                    <ul>
+                      {project.myContributions.map((point, index) => (
+                        <li key={index} className="mb-4">
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
+            </Col>
+            <Col>
+              {" "}
+              {/* techstack */}
+              <h2 className="d-flex justify-content-center mb-3">Tech Stack</h2>
+              <div className="d-flex justify-content-center mb-5">
+                <p className="text-center">
+                  {project.stack.map((stack, index) => (
+                    <span
+                      key={index}
+                      className="badge bg-secondary fs-6 fw-light"
+                      style={{ margin: "5px" }}
+                    >
+                      {stack}
+                    </span>
+                  ))}
+                </p>
+              </div>
+              <Row className="d-flex justify-content-center">
+                {project.link && (
+                  <Col>
+                    {/* flex button link */}
+                    <div className="d-flex justify-content-center">
+                      <a
+                        href={project.link}
+                        className="resume-button mb-5 "
+                        role="button"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {project.linkDescription}
+                      </a>
+                    </div>
+                  </Col>
+                )}
+                {project.gitHubRepo && (
+                  <Col>
+                    {/* github repo button link */}
+                    <div className="d-flex justify-content-center">
+                      <a
+                        href={project.gitHubRepo}
+                        className="resume-button-inverse mb-5 "
+                        role="button"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub Repository
+                      </a>
+                    </div>
+                  </Col>
+                )}
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-center"></Col>
+            <Col>
+              {/* documentation pdf */}
+              {project.documentation && (
+                <>
+                  <h2 className="d-flex justify-content-center mb-3">
+                    Documentation
+                  </h2>
+                  <button
+                    onClick={() => setShowPDF(!showPDF)}
+                    className="btn btn-outline-secondary"
+                  >
+                    {showPDF ? "Hide PDF" : "View Final Report"}
+                  </button>
+                  {showPDF && (
+                    <div className="pdf-container">
+                      <object
+                        data={project.documentation}
+                        type="application/pdf"
+                        width="100%"
+                        height="100%"
+                      >
+                        <p>
+                          Alternative text - include a link{" "}
+                          <a href={project.documentation}>to the PDF!</a>
+                        </p>
+                      </object>
+                    </div>
+                  )}
+                </>
+              )}
+            </Col>
+          </Row>
+        </Container>
+
+        {/* screenshots */}
+        {/* <h2 className="d-flex justify-content-center mb-3">Screenshots</h2>
+        <div className="d-flex mb-5">
+          <p></p>
+        </div> */}
+
+        {/*Live Demo and Code */}
+        {/* <h2 className="d-flex justify-content-center mb-3">Live Demo & Code</h2>
+        <div className="d-flex mb-5">
+          <p></p>
+        </div> */}
 
         {/* description */}
         <div className="mt-5 mb-5 fs-5">
@@ -72,45 +218,10 @@ const ProjectDetails = () => {
           ))}
         </div>
 
-        {/* check if there is a link, if so, display */}
-        {project.link && (
-          <a
-            href={project.link}
-            className="resume-button mb-5 d-flex justify-content-center"
-            role="button"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {project.linkDescription}
-          </a>
-        )}
-
-        {/* view notes prompt */}
-
-        {/* display pdf */}
-        {project.documentation && (
-          <>
-            <div>
-              <h3 className="text-center mb-4">
-                <i className="bi bi-arrow-down-short"></i>Check out my notes
-                <i className="bi bi-arrow-down-short"></i>
-              </h3>
-            </div>
-            <div className="pdf-container">
-              <object
-                data={project.documentation}
-                type="application/pdf"
-                width="100%"
-                height="100%"
-              >
-                <p>
-                  Alternative text - include a link{" "}
-                  <a href={project.documentation}>to the PDF!</a>
-                </p>
-              </object>
-            </div>
-          </>
-        )}
+        <Row>
+          <Col></Col>
+          <Col></Col>
+        </Row>
       </div>
     </>
   );

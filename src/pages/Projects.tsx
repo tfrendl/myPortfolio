@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="row row-cols-1 row-cols-md-2 g-5 mx-auto">
         {projectsData.map((project) => (
           <div className="col mb-4">
-            <div className="card">
+            <div className="card project-card">
               <img src={project.image} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h3 className="card-title">{project.title}</h3>
