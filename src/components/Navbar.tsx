@@ -64,6 +64,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
+            {/* projects */}
             <li className="nav-item">
               <NavLink
                 to="/projects"
@@ -76,7 +77,8 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* about */}
+            {/* <li className="nav-item">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -87,8 +89,9 @@ const Navbar = () => {
               >
                 About
               </NavLink>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* contact */}
+            {/* <li className="nav-item">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -99,7 +102,7 @@ const Navbar = () => {
               >
                 Contact
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

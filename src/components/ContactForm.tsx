@@ -51,7 +51,7 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="contactForm py-5 col-md-4 mx-auto needs-validation"
+        className="contactForm mb-5 col-md-4 mx-auto needs-validation"
       >
         <div className="mb-2">
           <input
@@ -73,7 +73,7 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-4">
           <textarea
             className="form-control"
             placeholder="Message"
