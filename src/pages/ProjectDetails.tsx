@@ -56,17 +56,17 @@ const ProjectDetails = () => {
         <Container fluid>
           {/* row 1 */}
           <Row className="mb-5">
-            <Col>
+            <Col xs={12} md={6} className="mb-5">
               {" "}
               {/* project image */}
               <img
                 src={project.image}
                 alt={project.title}
                 style={{ width: "100%" }}
-                className="project-img-container"
+                className="project-img-container img-fluid"
               />
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               {/* features */}
               {project.keyFeatures.length > 0 && (
                 <>
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
                     Features
                   </h2>
 
-                  <div className="d-flex justify-content-center mb-5">
+                  <div className="d-flex justify-content-center">
                     <ul>
                       {project.keyFeatures.map((feature, index) => (
                         <li key={index} className="mb-4">
@@ -88,7 +88,7 @@ const ProjectDetails = () => {
             </Col>
           </Row>
           <Row className="mb-5">
-            <Col>
+            <Col xs={12} md={6}>
               {" "}
               {/* my role */}
               {project.myContributions.length > 0 && (
@@ -108,7 +108,7 @@ const ProjectDetails = () => {
                 </>
               )}
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               {" "}
               {/* techstack */}
               <h2 className="d-flex justify-content-center mb-3">Tech Stack</h2>
@@ -127,7 +127,7 @@ const ProjectDetails = () => {
               </div>
               <Row className="d-flex justify-content-center">
                 {project.link && (
-                  <Col>
+                  <Col xs={12} md={6} className="mb-2">
                     {/* flex button link */}
                     <div className="d-flex justify-content-center">
                       <a
@@ -143,7 +143,7 @@ const ProjectDetails = () => {
                   </Col>
                 )}
                 {project.gitHubRepo && (
-                  <Col>
+                  <Col xs={12} md={6}>
                     {/* github repo button link */}
                     <div className="d-flex justify-content-center">
                       <a
@@ -163,19 +163,20 @@ const ProjectDetails = () => {
           </Row>
           <Row>
             <Col className="text-center"></Col>
-            <Col>
+            <Col xs={12} md={6}>
               {/* documentation pdf */}
               {project.documentation && (
                 <>
-                  <h2 className="d-flex justify-content-center mb-3">
-                    Documentation
-                  </h2>
-                  <button
-                    onClick={() => setShowPDF(!showPDF)}
-                    className="btn btn-outline-secondary"
-                  >
-                    {showPDF ? "Hide PDF" : "View Final Report"}
-                  </button>
+                  <h2 className="text-center mb-3">Documentation</h2>
+                  <div className="d-flex justify-content-center">
+                    {" "}
+                    <button
+                      onClick={() => setShowPDF(!showPDF)}
+                      className="resume-button mb-3"
+                    >
+                      {showPDF ? "Hide PDF" : "View Final Report"}
+                    </button>
+                  </div>
                   {showPDF && (
                     <div className="pdf-container">
                       <object

@@ -8,7 +8,7 @@ const Projects = () => {
   }, []);
   return (
     <>
-      <h1 className=" mx-auto d-flex justify-content-center mb-5 text-decoration-underline">
+      <h1 className="mx-auto d-flex justify-content-center mb-5 text-decoration-underline">
         My Projects
       </h1>
       <div className="row row-cols-1 row-cols-md-2 g-5 mx-auto">
