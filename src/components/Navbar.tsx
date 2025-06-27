@@ -51,8 +51,9 @@ const Navbar = () => {
             boxShadow: isOpen ? "0px 4px 6px rgba(0,0,0,0.1)" : "",
           }}
         >
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+          {/* Home */}
+          {/* <ul className="navbar-nav ms-auto"> */}
+          {/* <li className="nav-item">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -63,9 +64,9 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-            </li>
-            {/* projects */}
-            <li className="nav-item">
+            </li> */}
+          {/* projects */}
+          {/* <li className="nav-item">
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
@@ -76,9 +77,9 @@ const Navbar = () => {
               >
                 Projects
               </NavLink>
-            </li>
-            {/* about */}
-            {/* <li className="nav-item">
+            </li> */}
+          {/* about */}
+          {/* <li className="nav-item">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -90,8 +91,8 @@ const Navbar = () => {
                 About
               </NavLink>
             </li> */}
-            {/* contact */}
-            {/* <li className="nav-item">
+          {/* contact */}
+          {/* <li className="nav-item">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -103,7 +104,7 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li> */}
-          </ul>
+          {/* </ul> */}
         </div>
       </div>
     </nav>

@@ -130,7 +130,7 @@ container {
 
 .project-img-container,
 .project-card {
-  maxwidth: 100%;
+  max-width: 100%;
   overflow: hidden;
   height: auto;
   border: 1px solid #ccc;
