@@ -27,7 +27,7 @@ const Navbar = () => {
         </a>
 
         {/* Display hamburger on smaller screens */}
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           onClick={toggleMenu}
@@ -36,10 +36,10 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"> </span>
-        </button>
+        </button> */}
 
         {/* Navigation Links */}
-        <div
+        {/* <div
           className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} // Apply 'show' class when menu is open
           id="navbarNav"
           style={{
@@ -49,11 +49,11 @@ const Navbar = () => {
             padding: "10px",
             borderRadius: "5px",
             boxShadow: isOpen ? "0px 4px 6px rgba(0,0,0,0.1)" : "",
-          }}
-        >
-          {/* Home */}
-          {/* <ul className="navbar-nav ms-auto"> */}
-          {/* <li className="nav-item">
+          }} */}
+        {/* > */}
+        {/* Home */}
+        {/* <ul className="navbar-nav ms-auto"> */}
+        {/* <li className="nav-item">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -65,8 +65,8 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li> */}
-          {/* projects */}
-          {/* <li className="nav-item">
+        {/* projects */}
+        {/* <li className="nav-item">
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
@@ -78,8 +78,8 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li> */}
-          {/* about */}
-          {/* <li className="nav-item">
+        {/* about */}
+        {/* <li className="nav-item">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -91,8 +91,8 @@ const Navbar = () => {
                 About
               </NavLink>
             </li> */}
-          {/* contact */}
-          {/* <li className="nav-item">
+        {/* contact */}
+        {/* <li className="nav-item">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -104,8 +104,8 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li> */}
-          {/* </ul> */}
-        </div>
+        {/* </ul> */}
+        {/* </div> */}
       </div>
     </nav>
   );
